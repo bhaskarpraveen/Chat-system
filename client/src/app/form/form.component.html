@@ -1,0 +1,17 @@
+<div class="center">
+    <div class="container">
+        <div class="form">
+            <h2>Enter Details</h2>
+        <mat-form-field class="example-full-width">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Enter Username" #username >
+          </mat-form-field> <br>
+          <mat-form-field class="example-full-width">
+            <mat-label>Room</mat-label>
+            <input matInput placeholder="Enter Room name" #room>
+          </mat-form-field> <br>
+          <button mat-raised-button color="primary" (click)="handleFormSubmit(username.value,room.value)">submit</button>
+        </div>
+    </div>
+</div>
+

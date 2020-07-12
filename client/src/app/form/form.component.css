@@ -1,0 +1,15 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height:auto;
+    width: auto;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px grey;
+   margin-top: 300px;
+}
+.form{
+    padding: 30px 30px 30px 30px;  
+}

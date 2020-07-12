@@ -1,0 +1,20 @@
+<div class="center">
+    <div>
+        <p>Username: &#160;{{username}}</p>
+        <p>Room:&#160; {{room}}</p>
+    </div> <br>
+    <!-- <span><h1 *ngIf="isTyping" class="isTyping">typing...</h1></span> -->
+    <div *ngFor="let message of messages">
+        <p>{{message.user}}</p>
+        <h3>{{message.message}}</h3>
+    </div>
+    <br>
+    <div class="form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Message</mat-label>
+            <input  (keypress)="typing()" matInput placeholder="Enter a message" #message>
+          </mat-form-field> <br>
+          <button mat-raised-button color="primary"  (click)="sendMessage(message.value);message.value=''" >send</button>
+    </div>
+    
+</div>
